@@ -37,15 +37,15 @@ p {
   border-radius: 4px;
   transition: background-color 1s;
 }
-/* .btn-outline-primary{
+.btnOutlinePrimary{
     color: var(--primary);
     background-color: var(--white);
     border: 1px solid var(--primary);
 }
-.btn-outline-primary:hover{
+.btnOutlinePrimary:hover{
     color: var(--primary);
     background-color: var(--white);
-} */
+}
 .btnPrimary {
   color: var(--white);
   background-color: var(--primary);
@@ -55,6 +55,10 @@ p {
 .btnPrimary:hover {
   color: var(--primary);
   background-color: var(--white);
+}
+.svg{
+    width: 80px;
+    height: 80px;
 }
 /* .btn-github {
   color: var(--white);
@@ -121,6 +125,36 @@ h3{
     line-height: 24px;
 }
 /* Section Titles Ends*/
+/* Navbar Style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 85px;
+    background-color: var(--white);
+    box-shadow: 0px 5px 80px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbarItems > ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 43px;
+    text-decoration: none;
+}
+.navbarItems ul > li > a{
+    text-decoration: none;
+}
+.navbarContent{
+    color: var(--darkBlue);
+    font-size: 16px;
+}
+.navbarActiveContent{
+    color: var(--primary);
+}
 /* hero Section Style */
 .heroSection{
     display: grid;
