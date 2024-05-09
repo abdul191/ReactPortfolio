@@ -200,3 +200,67 @@ color: var(--primary);
     height: 100%;
 }
 /* heroSection Style Ends */
+/* Skills Style Starts */
+.skillsSection{
+    display: flex;
+    flex-direction: column;
+    padding: 150px 85px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 106px;
+}
+.skillsSectionHeading{
+    color: var(--headingColor);
+    font-size: 64px;
+}
+.skillsSectionContainer{
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 42px;
+    grid-template-columns: repeat(4,1fr);
+}
+.skillsSectionCard{
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    border-radius: 10px;
+    background-color: var(--backgroundShade);
+    min-height: 250px;
+}
+.skillsSectionCard:hover{
+    border-bottom: 4px solid var(--primary);
+}
+.skillsSectionCard:hover .skillsSectionDescription{
+
+color: var(--darkBlue);
+
+}
+.skillSectionImg{
+    display: flex;
+    padding: 13px;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+.skillsSectionCardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+.skillsSectionTitle{
+    color: var(--headingColor);
+    font-size: 32px;    
+}
+.skillsSectionDescription{
+    color: var(--black);
+    
+}
