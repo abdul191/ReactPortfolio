@@ -24,5 +24,28 @@
             "title": "Title 4",
             "description": "Description 4Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k"
         }
+    ],
+    "portfolio": [
+        {
+            "id": 1,
+            "src": "https://picsum.photos/id/1/150/150",
+            "title": "Ahuse",
+            "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
+            "link": "view in github"
+        },
+        {
+            "id": 3,
+            "src": "https://picsum.photos/id/100/150/150",
+            "title": "Title 3",
+            "description": "Description 3 Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
+            "link": "view in github"
+        },
+        {
+            "id": 4,
+            "src": "https://picsum.photos/id/71/150/150",
+            "title": "Title 4",
+            "description": "Description 4Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
+            "link": "view in github"
+        }
     ]
 }

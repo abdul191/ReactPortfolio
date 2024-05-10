@@ -60,7 +60,7 @@ p {
     width: 80px;
     height: 80px;
 }
-/* .btn-github {
+.btnGithub {
   color: var(--white);
   background-color: var(--github);
   border: var(--github);
@@ -71,10 +71,10 @@ p {
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
   gap: 16px;
 }
-.btn-github:hover {
+.btnGithub:hover {
   color: var(--github);
-  background-color: var(--github);
-} */
+  background-color: var(--white);
+}
 
 /*Global section ends here  */
 
@@ -275,4 +275,73 @@ color: var(--darkBlue);
 .aboutSectionImg > img{
     width: 100%;
     height: 100%;
+}
+/* Portfolio Section */
+.portfolioSection{
+    display: flex;
+    padding: 112px 85px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+.portfolioContainerBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.portfolioContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+}
+.porfolioSectionContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 42px;
+}
+.portfolioSectionImg{
+border-radius: 8px;
+width: 100%;
+}
+.portfolioSectionImg > img{
+    width: 100%;
+}
+.portfolioSectionCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    background: #fff;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.portfolioSectionCardContent{
+display: flex;
+padding: 32px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+align-self: stretch;
+
+}
+.portfolioSectionTitle{
+    color: var(--headingColor);
+}
+.porfolioLink{
+    text-decoration: none;
+    display: flex;
+    gap: 16px;
+    border-bottom: 1.33px solid var(--primary);
+    padding-bottom: 10.6;
+    font-weight: 600;
+}
+.portfolioSectionCard:hover path{
+    stroke: #00b06a;
 }
