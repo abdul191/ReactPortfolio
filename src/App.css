@@ -262,5 +262,17 @@ color: var(--darkBlue);
 }
 .skillsSectionDescription{
     color: var(--black);
-    
+}
+/* Skills End */
+/* AboutSection */
+.aboutSection{
+    display: grid;
+    padding: 133px 85px;
+    align-items: center;
+    gap:144px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.aboutSectionImg > img{
+    width: 100%;
+    height: 100%;
 }
