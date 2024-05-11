@@ -47,5 +47,32 @@
             "description": "Description 4Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
             "link": "view in github"
         }
+    ],
+    "testimonial": [
+        {
+            "id": 1,
+            "count":"5",
+            "src": "https://picsum.photos/id/1/150/150",
+            "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
+            "authorName":"dainne russel",
+            "authorDesignation": "Star bux"
+        },
+        {
+            "id": 2,
+            "count":"5",
+            "src": "https://picsum.photos/id/1/150/150",
+            "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
+            "authorName":"dainne russel",
+            "authorDesignation": "Star bux"
+        },
+        {
+            "id": 3,
+            "count":"5",
+            "src": "https://picsum.photos/id/1/150/150",
+            "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
+            "authorName":"dainne russel",
+            "authorDesignation": "Star bux"
+        }
+
     ]
 }
