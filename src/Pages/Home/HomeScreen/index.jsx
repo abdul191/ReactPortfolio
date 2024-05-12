@@ -4,6 +4,7 @@ import AboutMe from "../AboutMe";
 import Portfolio from "../Portfolio";
 import Testimonials from "../Testimonials";
 import ContactMe from "../ContactMe";
+import Footer from "../Footer";
 function index() {
   return (
     <>
@@ -13,6 +14,7 @@ function index() {
       <Portfolio/>
       <Testimonials/>
       <ContactMe/>
+      <Footer/>
     </>
   );
 }
