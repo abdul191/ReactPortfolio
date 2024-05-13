@@ -3,7 +3,7 @@ const ContactMe = () => {
     <section id="ContactMe" className="contactSection">
       <div>
         <p className="subTitle">Get In Touch</p>
-        <h2>Contact Me</h2>
+        <h2 className="sectionHeading">Contact Me</h2>
         <p className="textLg">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos,
           expedita!

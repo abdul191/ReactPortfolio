@@ -228,7 +228,6 @@ h3 {
   flex: 1 0 0;
   border-radius: 10px;
   background-color: var(--backgroundShade);
-  min-height: 250px;
 }
 .skillsSectionCard:hover {
   border-bottom: 4px solid var(--primary);
@@ -600,4 +599,84 @@ font-size: 25px;
   .divider{
     margin: 20px;
   }
+}
+
+/* Hamburger menu */
+.navHamburger{
+    display: none;
+    width: 1rem;
+    height: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.navHamburgerLine{
+    display: block;
+    height: 0.21rem;
+    width: 100%;
+    background-color: #000;
+    border-radius: 0.6rem;
+    transition: all ease-in-out 0.2s;
+}
+
+/*media queries for hamburger */
+@media screen and (max-width: 1200px) {
+    .navHamburger {
+        display: flex;
+        z-index: 200;
+    }
+
+    .navbarItems {
+        display: flex;
+    }
+
+    .navbarItems {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255);
+        top: -200rem;
+        left: 0;
+        width: 100%;
+        transition: all ease-in-out 0.4s;
+    }
+
+    .navbarItems ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 3rem 0 0.6rem;
+        z-index: -100;
+    }
+
+    .navbarItems ul li {
+        text-align: center;
+    }
+
+    .navbarItems ul li a {
+        padding: 0.5rem;
+    }
+
+    .navbarItems {
+        z-index: -100;
+    }
+
+    .navbarItems.active {
+        top: 30px;
+    }
+
+    .navHamburger.active :nth-child(1) {
+        transform: rotate(45deg) translate(0.35rem, 0.15rem);
+    }
+
+    .navHamburger.active :nth-child(2) {
+        opacity: 0;
+    }
+
+    .navHamburger.active :nth-child(3) {
+        transform: rotate(-45deg) translate(0.35rem, -0.15rem);
+    }
 }
