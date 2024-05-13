@@ -23,7 +23,6 @@ function HeroSections() {
                   () => {},
                 ]}
                 wrapper="span"
-                cursor={true}
                 speed={{ type: "keyStrokeDelayInMs", value: 200 }}
                 repeat={Infinity}
               />
@@ -33,7 +32,7 @@ function HeroSections() {
           </h1>
           <p className="heroSectionDescription">
             Passionate about creating engaging digital experiences.
-            Skilled in JavaScript, React.js, and the MERN stack. {`Let's`}
+            Skilled in JavaScript, React.js, Redux and the MERN stack. {`Let's `}
             collaborate and bring your digital projects to life.
             <br />
             Together, {`we'll`} build something extraordinary.

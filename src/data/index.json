@@ -3,26 +3,26 @@
         {
             "id": 1,
             "src": "https://picsum.photos/id/1/150/150",
-            "title": "Title 1",
-            "description": "Description 3 Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k"
+            "title": "Front-End",
+            "description": "Skilled in HTML5, CSS3, and JavaScript, I excel at creating visually engaging interfaces, enhancing user experience."
+        },
+        {
+            "id": 2,
+            "src": "https://picsum.photos/id/100/150/150",
+            "title": "React.js",
+            "description": "Proficient in React.js, I specialize in designing dynamic interfaces, significantly enhancing user experience."
         },
         {
             "id": 3,
-            "src": "https://picsum.photos/id/100/150/150",
-            "title": "Title 3",
-            "description": "Description 3 Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k"
-        },
-        {
-            "id": 4,
             "src": "https://picsum.photos/id/71/150/150",
-            "title": "Title 4",
-            "description": "Description 4Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k"
+            "title": "Responsive Design",
+            "description": "Proficient in responsive design techniques, I ensure seamless user experiences across various devices, optimizing overall user interaction."
         },
         {
             "id": 4,
             "src": "https://picsum.photos/id/50/150/150",
-            "title": "Title 4",
-            "description": "Description 4Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k"
+            "title": "Version Control",
+            "description": "Skilled in Git, I streamline collaboration for efficient project management in development workflows."
         }
     ],
     "portfolio": [
