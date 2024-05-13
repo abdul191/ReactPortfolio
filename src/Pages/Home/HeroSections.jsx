@@ -1,4 +1,4 @@
-import Hero from "../../assets/images/hero.jpg"
+import Hero from "../../assets/images/hero.png"
 function HeroSections() {
   return (
 <section id="heroSection" className="heroSection">

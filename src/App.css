@@ -17,14 +17,15 @@ p {
 }
 
 :root {
-  --primary: #4e34ee;
-  --headingColor: #282938;
-  --backgroundShade: #f5f5cf;
-  --github: #e62876;
-  --darkBlue: #1c1e53;
-  --black: #000;
-  --white: #fff;
+    --primary: #3F2B96;
+    --headingColor: #494949; 
+    --backgroundShade: #F5F5F5;
+    --github: #FF4081;
+    --darkBlue: #1A1A2E; 
+    --black: #000;
+    --white: #FFF;
 }
+
 .btn {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   display: inline-block;
