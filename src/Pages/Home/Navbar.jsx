@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import Logo from "../../assets/svg/logo-apple-appstore-svgrepo-com.svg"
+import Logo from "../../assets/svg/logo-apple-appstore-svgrepo-com.svg";
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
   const toggleNav = () => {
@@ -29,11 +29,14 @@ function Navbar() {
     <>
       <nav className={`navbar ${navActive ? "active" : " "}`}>
         <div>
-          <img
-            src={Logo}
-            alt="logoipsum"
-            className="svg"
-          />
+          <Link
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            to="heroSection">
+            <img src={Logo} alt="logoipsum" className="svg" />
+          </Link>
         </div>
         <a
           href="#"

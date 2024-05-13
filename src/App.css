@@ -60,6 +60,7 @@ p {
 .svg {
   width: 70px;
   height: 70px;
+  cursor: pointer;
 }
 .btnGithub {
   color: var(--white);
@@ -160,7 +161,7 @@ h3 {
 .heroSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 133.333px;
+  padding: 85px;
   align-items: center;
   justify-content: space-between;
   gap: 32px;

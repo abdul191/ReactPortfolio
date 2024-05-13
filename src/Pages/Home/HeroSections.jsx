@@ -1,5 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import Hero from "../../assets/images/hero.png";
+import { FaDownload } from "react-icons/fa6";
+import resume from "../../assets/UpdatedResume.pdf";
 function HeroSections() {
   return (
     <section id="heroSection" className="heroSection">
@@ -18,11 +20,11 @@ function HeroSections() {
                   1500,
                   "Mernstack",
                   1500,
-                  () => {
-                  },
+                  () => {},
                 ]}
                 wrapper="span"
                 cursor={true}
+                speed={{ type: "keyStrokeDelayInMs", value: 200 }}
                 repeat={Infinity}
               />
             </span>{" "}
@@ -30,13 +32,16 @@ function HeroSections() {
             Developer
           </h1>
           <p className="heroSectionDescription">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-            repudiandae.
+            Passionate about creating engaging digital experiences.
+            Skilled in JavaScript, React.js, and the MERN stack. {`Let's`}
+            collaborate and bring your digital projects to life.
             <br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit?
+            Together, {`we'll`} build something extraordinary.
           </p>
         </div>
-        <button className="btn btnPrimary">Get In Touch</button>
+        <a href={resume} download className="btn btnPrimary">
+          Download CV <FaDownload />
+        </a>
       </div>
       <div className="heroSectionImg">
         <img src={Hero} alt="hero section" />
