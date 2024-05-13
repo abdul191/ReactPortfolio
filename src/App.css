@@ -58,8 +58,8 @@ p {
   background-color: var(--white);
 }
 .svg {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 .btnGithub {
   color: var(--white);
@@ -130,7 +130,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 85px;
+  padding: 5px 85px;
   background-color: var(--white);
   box-shadow: 0px 5px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -151,6 +151,7 @@ h3 {
 .navbarContent {
   color: var(--darkBlue);
   font-size: 16px;
+  cursor: pointer;
 }
 .navbarActiveContent {
   color: var(--primary);
@@ -600,6 +601,13 @@ font-size: 25px;
   .divider{
     margin: 20px;
   }
+  .svg {
+    width: 45px;
+    height: 45px;
+  }
+  .navbar{
+    padding-left: 20px;
+  }
 }
 
 /* Hamburger menu */
@@ -624,6 +632,7 @@ font-size: 25px;
 
 /*media queries for hamburger */
 @media screen and (max-width: 1200px) {
+
     .navHamburger {
         display: flex;
         z-index: 200;
