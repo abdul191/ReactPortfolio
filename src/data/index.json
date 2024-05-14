@@ -1,78 +1,77 @@
 {
-    "skills": [
-        {
-            "id": 1,
-            "src": "/src/assets/images/frontend.jpg",
-            "title": "Front-End",
-            "description": "Skilled in HTML5, CSS3, and JavaScript, I excel at creating visually engaging interfaces, enhancing user experience."
-        },
-        {
-            "id": 2,
-            "src": "/src/assets/images/react.jpg",
-            "title": "React.js",
-            "description": "Proficient in React.js, I specialize in designing dynamic interfaces, significantly enhancing user experience."
-        },
-        {
-            "id": 3,
-            "src": "/src/assets/images/responsiveDesign.jpg",
-            "title": "Responsive Design",
-            "description": "Proficient in responsive design techniques, I ensure seamless user experiences across various devices, optimizing overall user interaction."
-        },
-        {
-            "id": 4,
-            "src": "/src/assets/images/versionControl.jpg",
-            "title": "Version Control",
-            "description": "Skilled in Git, I streamline collaboration for efficient project management in development workflows."
-        }
-    ],
-    "portfolio": [
-        {
-            "id": 1,
-            "src": "https://picsum.photos/id/1/150/150",
-            "title": "Ahuse",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "view in github"
-        },
-        {
-            "id": 3,
-            "src": "https://picsum.photos/id/100/150/150",
-            "title": "Title 3",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "view in github"
-        },
-        {
-            "id": 4,
-            "src": "https://picsum.photos/id/71/150/150",
-            "title": "Title 4",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "view in github"
-        }
-    ],
-    "testimonial": [
-        {
-            "id": 1,
-            "count":"5",
-            "src": "https://picsum.photos/id/1/150/150",
-            "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
-            "authorName":"dainne russel",
-            "authorDesignation": "Star bux"
-        },
-        {
-            "id": 2,
-            "count":"5",
-            "src": "https://picsum.photos/id/1/150/150",
-            "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
-            "authorName":"dainne russel",
-            "authorDesignation": "Star bux"
-        },
-        {
-            "id": 3,
-            "count":"5",
-            "src": "https://picsum.photos/id/1/150/150",
-            "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
-            "authorName":"dainne russel",
-            "authorDesignation": "Star bux"
-        }
-
-    ]
+  "skills": [
+    {
+      "id": 1,
+      "src": "/src/assets/images/frontend.jpg",
+      "title": "Front-End",
+      "description": "Skilled in HTML5, CSS3, and JavaScript, I excel at creating visually engaging interfaces, enhancing user experience."
+    },
+    {
+      "id": 2,
+      "src": "/src/assets/images/react.jpg",
+      "title": "React.js",
+      "description": "Proficient in React.js, I specialize in designing dynamic interfaces, significantly enhancing user experience."
+    },
+    {
+      "id": 3,
+      "src": "/src/assets/images/responsiveDesign.jpg",
+      "title": "Responsive Design",
+      "description": "Proficient in responsive design techniques, I ensure seamless user experiences across various devices, optimizing overall user interaction."
+    },
+    {
+      "id": 4,
+      "src": "/src/assets/images/versionControl.jpg",
+      "title": "Version Control",
+      "description": "Skilled in Git, I streamline collaboration for efficient project management in development workflows."
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "src": "/src/assets/images/hospitalManagement.jpg",
+      "title": "Queue Management System",
+      "description": "For this hospital management system, I've crafted a front-end interface tightly integrated with powerful APIs, enhancing operational efficiency and management capabilities.",
+      "link": "view in github"
+    },
+    {
+      "id": 2,
+      "src": "/src/assets/images/facilityManagement.jpg",
+      "title": "Facility Management System",
+      "description": "In this facility management system, I've designed a user-friendly interface to effortlessly oversee facility operations, making management tasks simple and efficient.",
+      "link": "view in github"
+    },
+    {
+      "id": 3,
+      "src": "/src/assets/images/keeper.jpg",
+      "title": "Note Keeper Application ",
+      "description": "In this note-keeping app, I've created a simple platform for jotting down and organizing your thoughts quickly and efficiently, making it easy to stay organized and productive.",
+      "link": "view in github"
+    }
+  ],
+  "testimonial": [
+    {
+      "id": 1,
+      "count": "5",
+      "src": "https://picsum.photos/id/1/150/150",
+      "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
+      "authorName": "dainne russel",
+      "authorDesignation": "Star bux"
+    },
+    {
+      "id": 2,
+      "count": "5",
+      "src": "https://picsum.photos/id/1/150/150",
+      "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
+      "authorName": "dainne russel",
+      "authorDesignation": "Star bux"
+    },
+    {
+      "id": 3,
+      "count": "5",
+      "src": "https://picsum.photos/id/1/150/150",
+      "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
+      "authorName": "dainne russel",
+      "authorDesignation": "Star bux"
+    }
+  ]
 }
