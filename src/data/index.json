@@ -2,25 +2,25 @@
     "skills": [
         {
             "id": 1,
-            "src": "https://picsum.photos/id/1/150/150",
+            "src": "/src/assets/images/frontend.jpg",
             "title": "Front-End",
             "description": "Skilled in HTML5, CSS3, and JavaScript, I excel at creating visually engaging interfaces, enhancing user experience."
         },
         {
             "id": 2,
-            "src": "https://picsum.photos/id/100/150/150",
+            "src": "/src/assets/images/react.jpg",
             "title": "React.js",
             "description": "Proficient in React.js, I specialize in designing dynamic interfaces, significantly enhancing user experience."
         },
         {
             "id": 3,
-            "src": "https://picsum.photos/id/71/150/150",
+            "src": "/src/assets/images/responsiveDesign.jpg",
             "title": "Responsive Design",
             "description": "Proficient in responsive design techniques, I ensure seamless user experiences across various devices, optimizing overall user interaction."
         },
         {
             "id": 4,
-            "src": "https://picsum.photos/id/50/150/150",
+            "src": "/src/assets/images/versionControl.jpg",
             "title": "Version Control",
             "description": "Skilled in Git, I streamline collaboration for efficient project management in development workflows."
         }

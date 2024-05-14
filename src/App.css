@@ -206,7 +206,7 @@ h3 {
 .skillsSection {
   display: flex;
   flex-direction: column;
-  padding: 150px 85px;
+  padding:85px;
   justify-content: center;
   align-items: flex-start;
   gap: 106px;
@@ -231,22 +231,25 @@ h3 {
   flex: 1 0 0;
   border-radius: 10px;
   background-color: var(--backgroundShade);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 .skillsSectionCard:hover {
-  border-bottom: 4px solid var(--primary);
+  transform: scale(1.03); 
 }
 .skillsSectionCard:hover .skillsSectionDescription {
-  color: var(--darkBlue);
+  color:var(--darkBlue);
 }
 .skillSectionImg {
   display: flex;
-  padding: 13px;
-  justify-content: center;
-  align-items: center;
   gap: 13px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+.skillsImg{
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
 }
 .skillsSectionCardContent {
   display: flex;

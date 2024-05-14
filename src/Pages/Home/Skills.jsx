@@ -13,7 +13,7 @@ function Skills() {
             {Data.skills?.map((item,index)=>(
                 <div key={index} className="skillsSectionCard">
                     <div className="skillSectionImg">
-                        <img src={item.src} alt="Skills" />
+                        <img src={item.src} alt="Skills" className="skillsImg" />
                     </div>
                     <div className="skillsSectionCardContent">
                         <h3 className="skillsSectionTitle">
