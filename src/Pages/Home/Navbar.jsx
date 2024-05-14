@@ -69,9 +69,9 @@ function Navbar() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="portfolioSection"
+                to="myExpertise"
                 className="navbarContent">
-                Portfolio
+                My Expertise
               </Link>
             </li>
             <li>
@@ -85,6 +85,19 @@ function Navbar() {
                 to="AboutMe"
                 className="navbarContent">
                 About Me
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeMenu}
+                activeClass="navbarActiveContent"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="portfolioSection"
+                className="navbarContent">
+                Portfolio
               </Link>
             </li>
             <li>

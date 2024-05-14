@@ -31,8 +31,8 @@ function HeroSections() {
             Developer
           </h1>
           <p className="heroSectionDescription">
-            Passionate about creating engaging digital experiences.
-            Skilled in JavaScript, React.js, Redux and the MERN stack. {`Let's `}
+            Passionate about creating engaging digital experiences: skilled in
+            JavaScript, React.js, Redux and the MERN stack. {`Let's `}
             collaborate and bring your digital projects to life.
             <br />
             Together, {`we'll`} build something extraordinary.
