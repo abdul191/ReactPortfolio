@@ -26,7 +26,9 @@ function Portfolio() {
                 <h3 className="portfolioSectionTitle">{item.title}</h3>
                 <p className="textMd">{item.description}</p>
               </div>
+              <div className="portfolioGithubLive">
               <p className="textSm porfolioLink">
+                <a href={item.githubLink} className="arrowBtn">
                 {item.link}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +41,10 @@ function Portfolio() {
                     stroke="currentColor"
                   />
                 </svg>
+                </a>
               </p>
+              <p className="porfolioLink textSm"><a href={item.liveLink} className="arrowBtn">{item.linkContent}</a></p>
+              </div>
             </div>
           </div>
         ))}

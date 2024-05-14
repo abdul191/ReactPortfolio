@@ -77,7 +77,14 @@ p {
   color: var(--black);
   background-color: var(--white);
 }
-
+.arrowBtn{
+ color: var(--darkBlue); 
+ text-decoration: none;
+}
+.arrowBtn:hover{
+  color: var(--github);
+  border-bottom:1px solid var(--github);
+}
 
 
 /*Global section ends here  */
@@ -127,6 +134,7 @@ h3 {
   font-weight: 600;
   line-height: 24px;
 }
+
 /* Section Titles Ends*/
 /* Navbar Style */
 .navbar {
@@ -323,9 +331,12 @@ h3 {
   flex: 1 0 0;
   background: #fff;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+.portfolioSectionCard:hover{
+  transform: scale(1.03);
 }
 .portfolioSectionCardContent {
   display: flex;
@@ -342,13 +353,25 @@ h3 {
   text-decoration: none;
   display: flex;
   gap: 16px;
-  border-bottom: 1.33px solid var(--primary);
-  padding-bottom: 10.6;
+  padding-bottom: 10;
   font-weight: 600;
 }
-.portfolioSectionCard:hover path {
-  stroke: #00b06a;
+
+.portfolioGithubLive {
+  width: 100%;
+  display: flex; 
+  justify-content: space-between; }
+
+.portfolioGithubLive p:first-child {
+  order: 1;
 }
+
+.portfolioGithubLive p:last-child {
+  order: 2;
+}
+
+
+
 
 /* Testimonial */
 .testimonialSection {
