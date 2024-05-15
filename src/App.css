@@ -423,7 +423,7 @@ h3 {
 /* contact Section */
 .contactSection {
   display: flex;
-  padding: 150px 85px;
+  padding: 85px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
