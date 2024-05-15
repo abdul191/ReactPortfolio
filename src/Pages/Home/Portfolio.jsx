@@ -1,6 +1,14 @@
 import data from "../../data/index.json";
-import githubLogo from "../../assets/svg/github.svg"
+import githubLogo from "../../assets/svg/github.svg";
+import queueManagement from "../../assets/images/hospitalManagement.jpg";
+import facilityManagement from "../../assets/images/facilityManagement.jpg";
+import noteKeeper from "../../assets/images/keeper.jpg";
 function Portfolio() {
+  const portfolioImages = {
+    "Queue Management System": queueManagement,
+    "Note Keeper Application": noteKeeper,
+    "Facility Management System": facilityManagement,
+  };
   return (
     <section className="portfolioSection" id="portfolioSection">
       <div className="portfolioContainerBox">
@@ -10,7 +18,7 @@ function Portfolio() {
         </div>
         <div>
           <a href="https://github.com/abdul191" className="btn btnGithub">
-            <img src={githubLogo} alt="github logo"  className="githubLogo"/>
+            <img src={githubLogo} alt="github logo" className="githubLogo" />
             Visit My GitHub
           </a>
         </div>
@@ -19,7 +27,7 @@ function Portfolio() {
         {data?.portfolio?.map((item, index) => (
           <div key={index} className="portfolioSectionCard">
             <div className="portfolioSectionImg">
-              <img src={item.src} alt="Placeholder" />
+              <img src={portfolioImages[item.title]} alt="Placeholder" />
             </div>
             <div className="portfolioSectionCardContent">
               <div>
@@ -27,23 +35,27 @@ function Portfolio() {
                 <p className="textMd">{item.description}</p>
               </div>
               <div className="portfolioGithubLive">
-              <p className="textSm porfolioLink">
-                <a href={item.githubLink} className="arrowBtn">
-                {item.link}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none">
-                  <path
-                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                    stroke="currentColor"
-                  />
-                </svg>
-                </a>
-              </p>
-              <p className="porfolioLink textSm"><a href={item.liveLink} className="arrowBtn">{item.linkContent}</a></p>
+                <p className="textSm porfolioLink">
+                  <a href={item.githubLink} className="arrowBtn">
+                    {item.link}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 19"
+                      fill="none">
+                      <path
+                        d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                        stroke="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </p>
+                <p className="porfolioLink textSm">
+                  <a href={item.liveLink} className="arrowBtn">
+                    {item.linkContent}
+                  </a>
+                </p>
               </div>
             </div>
           </div>
