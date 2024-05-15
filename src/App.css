@@ -598,6 +598,7 @@ input[type="checkbox"] {
   }
   .contactFormContainer{
     width: 100%;
+    justify-content: center;
   }
   .skillsSection,
   .testimonialSection,
