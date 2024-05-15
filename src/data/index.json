@@ -2,7 +2,7 @@
   "skills": [
     {
       "id": 1,
-      "src": "/src/assets/images/frontend.jpg",
+      "src": "/src/assets/images/frontend.png",
       "title": "Front-End",
       "description": "Skilled in HTML5, CSS3, and JavaScript, I excel at creating visually engaging interfaces, enhancing user experience."
     },
