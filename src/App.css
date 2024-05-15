@@ -726,3 +726,25 @@ input[type="checkbox"] {
     transform: rotate(-45deg) translate(0.35rem, -0.15rem);
   }
 }
+/* media Query for below */
+@media screen and (max-width: 600px) {
+.sectionTitle,
+.subTitle{
+  font-size: 17px;
+}
+.heroSectionTitle, .skillsSectionHeading, .sectionHeading,.skillsSectionTitle{
+  font-size: 21px;
+}
+.heroSectionDescription,.footerContent{
+  font-size: 16px;
+}
+.heroSection,
+.skillsSection,
+.aboutSection,
+.portfolioSection,
+.testimonialSection,
+.contactSection ,
+.footerContainer{
+  width: 80%;
+}
+}
