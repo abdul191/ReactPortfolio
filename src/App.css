@@ -575,6 +575,7 @@ input[type="checkbox"] {
   .heroSectionDescription,
   .footerContent {
     text-align: center;
+    font-size: 17px;
   }
   .skillsSectionContainer,
   .aboutSection,
