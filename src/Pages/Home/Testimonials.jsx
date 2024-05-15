@@ -4,7 +4,7 @@ function Testimonials() {
     <section className="testimonialSection" id="Testimonials">
       <div className="portfolioContainerBox">
         <div className="portfolioContainer">
-          <p className="subTitle">Client Feedback</p>
+          <p className="sectionTitle">Client Feedback</p>
           <h2 className="sectionHeading">Customer Feedback</h2>
         </div>
       </div>

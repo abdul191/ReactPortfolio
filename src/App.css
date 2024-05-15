@@ -127,13 +127,14 @@ h3 {
   display: flex;
   align-items: flex-start;
 }
-/* Portfolio Testimonil & contact Me  */
 .subTitle {
   color: var(--headingColor);
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 600;
-  line-height: 24px;
-}
+  line-height: 32px;
+} 
+
+/* Portfolio Testimonil & contact Me  */
 
 /* Section Titles Ends*/
 /* Navbar Style */
