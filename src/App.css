@@ -570,7 +570,7 @@ input[type="checkbox"] {
   .heroSection {
     display: flex;
     flex-direction: column-reverse;
-    padding-bottom: 70px;
+    padding:60px;
   }
   .heroSectionTitle,
   .heroSectionDescription,
@@ -601,6 +601,14 @@ input[type="checkbox"] {
     width: 100%;
     justify-content: center;
   }
+  .heroSection,
+.skillsSection,
+.aboutSection,
+.portfolioSection,
+.contactSection,
+.footerContainer{
+  padding: 50px;
+}
   .skillsSection,
   .testimonialSection,
   .contactSection,
@@ -737,6 +745,14 @@ input[type="checkbox"] {
 }
 .heroSectionDescription,.footerContent{
   font-size: 16px;
+}
+.heroSection,
+.skillsSection,
+.aboutSection,
+.portfolioSection,
+.contactSection,
+.footerContainer{
+  padding: 40px;
 }
 
 }
