@@ -596,6 +596,9 @@ input[type="checkbox"] {
   .portfolioContainerBox {
     gap: 30px;
   }
+  .contactFormContainer{
+    width: 100%;
+  }
   .skillsSection,
   .testimonialSection,
   .contactSection,
@@ -620,13 +623,6 @@ input[type="checkbox"] {
   .heroSectionContentBox {
     gap: 10px;
   }
-  .contactFormContainer {
-    width: 100%;
-  }
-  .skillsSectionCard {
-    width: 90%;
-  }
-
   .container {
     display: flex;
     flex-direction: column;
