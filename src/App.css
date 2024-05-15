@@ -335,9 +335,11 @@ h3 {
   border-top-right-radius: 12px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
-.portfolioSectionCard:hover{
+.portfolioSectionCard:hover,
+.testimonialSectionCard:hover {
   transform: scale(1.03);
 }
+
 .portfolioSectionCardContent {
   display: flex;
   padding: 32px;
@@ -376,7 +378,7 @@ h3 {
 /* Testimonial */
 .testimonialSection {
   display: flex;
-  padding: 112px 85px;
+  padding: 85px;
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
@@ -394,7 +396,9 @@ h3 {
   flex-direction: 0 0 1;
   border-radius: 8px;
   border: 1px solid #006b61;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
+
 .testimonialSectionCardReview {
   display: flex;
   align-items: flex-start;
@@ -404,6 +408,9 @@ h3 {
   display: flex;
   align-items: center;
   gap: 21px;
+}
+.ClientAvatar{
+  border-radius: 20%;
 }
 .testimonialAuthorName {
   font-weight: 600;

@@ -60,26 +60,26 @@
     {
       "id": 1,
       "count": "5",
-      "src": "https://picsum.photos/id/1/150/150",
-      "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
-      "authorName": "dainne russel",
-      "authorDesignation": "Star bux"
+      "src": "https://randomuser.me/api/portraits/men/43.jpg",
+      "description": "I've had a wonderful experience with the services provided. They were professional, responsive, and exceeded my expectations. Highly recommended!",
+      "authorName": "Alice Johnson",
+      "authorDesignation": "Satisfied Customer"
     },
     {
       "id": 2,
       "count": "5",
-      "src": "https://picsum.photos/id/1/150/150",
-      "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
-      "authorName": "dainne russel",
-      "authorDesignation": "Star bux"
+      "src": "https://randomuser.me/api/portraits/men/9.jpg",
+      "description": "The team was fantastic to work with. They delivered exceptional results and made the entire process seamless. I couldn't be happier with the outcome!",
+      "authorName": "David Smith",
+      "authorDesignation": "Happy Client"
     },
     {
       "id": 3,
       "count": "5",
-      "src": "https://picsum.photos/id/1/150/150",
-      "description": "Description 1 for yo u dkj dsflkfds jlkfdsjlkds lkdsfjlk fdj lkdsajk jfdsljkld kdjkfdj k",
-      "authorName": "dainne russel",
-      "authorDesignation": "Star bux"
+      "src": "https://randomuser.me/api/portraits/men/61.jpg",
+      "description": "I'm thoroughly impressed by the professionalism and expertise demonstrated. They provided top-notch service from start to finish. Would definitely work with them again!",
+      "authorName": "Emily Brown",
+      "authorDesignation": "Delighted Customer"
     }
   ]
 }

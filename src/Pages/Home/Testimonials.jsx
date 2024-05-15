@@ -31,7 +31,7 @@ function Testimonials() {
             </div>
             <p className="textMd">{item.description}</p>
             <div className="tesitmonialSectionCardAuthorDetail">
-              <img src={item.src} alt="Avatar" />
+              <img src={item.src} alt="Avatar"  className="ClientAvatar"/>
               <div>
                 <p className="textMd testimonialAuthorName">
                   {item.authorName}
