@@ -5,7 +5,14 @@ function Footer() {
     <footer className="footerContainer">
       <div className="footerLinkContainer">
         <div>
-          <img src={Logo} alt="logo" className="svg" />
+        <Link
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+            to="heroSection">
+          <img src={Logo} alt="logo" className="svg"  to="heroSection"/>
+          </Link>
         </div>
         <div className="footerItems">
           <ul>
@@ -15,9 +22,9 @@ function Footer() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={1000}
                 to="heroSection"
-                className="textMd">
+                className="textMd ">
                 Home
               </Link>
             </li>
@@ -27,10 +34,10 @@ function Footer() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
-                to="portfolioSection"
-                className="textMd">
-                Portfolio
+                duration={1000}
+                to="myExpertise"
+                className="textMd ">
+                My Expertise
               </Link>
             </li>
             <li>
@@ -39,9 +46,9 @@ function Footer() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={1000}
                 to="AboutMe"
-                className="textMd">
+                className="textMd ">
                 About Me
               </Link>
             </li>
@@ -51,10 +58,10 @@ function Footer() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
-                to="ContactMe"
-                className="textMd">
-                Contact
+                duration={1000}
+                to="portfolioSection"
+                className="textMd ">
+                Portfolio
               </Link>
             </li>
             <li>
@@ -63,10 +70,22 @@ function Footer() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={1000}
                 to="Testimonials"
-                className="textMd">
+                className="textMd ">
                 Testimonials
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbarActiveContent"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+                to="ContactMe"
+                className="textMd ">
+                Contact
               </Link>
             </li>
           </ul>

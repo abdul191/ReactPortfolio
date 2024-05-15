@@ -480,7 +480,7 @@ input[type="checkbox"] {
 /* footer Section */
 .footerContainer {
   display: flex;
-  padding: 106px 85px;
+  padding: 85px 85px 50px 85px;
   flex-direction: column;
   align-items: flex-start;
   background: var(--bg-shade);
@@ -511,7 +511,7 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 .divider {
-  margin: 106px 0 42px;
+  margin: 42px;
   height: 1px;
   width: 100%;
   background: rgba(40, 41, 56, 0.55);
