@@ -738,13 +738,5 @@ input[type="checkbox"] {
 .heroSectionDescription,.footerContent{
   font-size: 16px;
 }
-.heroSection,
-.skillsSection,
-.aboutSection,
-.portfolioSection,
-.testimonialSection,
-.contactSection ,
-.footerContainer{
-  width: 80%;
-}
+
 }
