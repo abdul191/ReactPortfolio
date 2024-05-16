@@ -4,7 +4,7 @@ const ContactMe = () => {
       <div>
         <p className="subTitle">Get In Touch</p>
         <h2 className="sectionHeading">Contact Me</h2>
-        <p className="textLg">
+        <p className="textMd">
           Feel free to reach out to me with any inquiries or questions. {"I'm"}{" "}
           here to help!
         </p>
