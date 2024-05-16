@@ -5,7 +5,6 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-
 h1,
 h2,
 h3,
@@ -15,7 +14,6 @@ h6,
 p {
   margin: 0;
 }
-
 :root {
   --primary: #3f2b96;
   --headingColor: #494949;
@@ -25,7 +23,6 @@ p {
   --black: #000;
   --white: #fff;
 }
-
 .btn {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   display: inline-block;
@@ -44,15 +41,14 @@ p {
   border: 1px solid var(--primary);
 }
 .btnOutlinePrimary:hover {
-  color: var(--primary);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--primary);
 }
 .btnPrimary {
   color: var(--white);
   background-color: var(--primary);
   border: 1px solid var(--primary);
 }
-
 .btnPrimary:hover {
   color: var(--primary);
   background-color: var(--white);
@@ -68,7 +64,6 @@ p {
   border: var(--github);
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
   gap: 16px;
@@ -77,15 +72,14 @@ p {
   color: var(--black);
   background-color: var(--white);
 }
-.arrowBtn{
- color: var(--darkBlue); 
- text-decoration: none;
+.arrowBtn {
+  color: var(--darkBlue);
+  text-decoration: none;
 }
-.arrowBtn:hover{
+.arrowBtn:hover {
   color: var(--github);
-  border-bottom:1px solid var(--github);
+  border-bottom: 1px solid var(--github);
 }
-
 
 /*Global section ends here  */
 
@@ -132,7 +126,7 @@ h3 {
   font-size: 21px;
   font-weight: 600;
   line-height: 32px;
-} 
+}
 
 /* Portfolio Testimonil & contact Me  */
 
@@ -293,7 +287,7 @@ h3 {
 /* Portfolio Section */
 .portfolioSection {
   display: flex;
-  padding:85px;
+  padding: 85px;
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
@@ -362,8 +356,9 @@ h3 {
 
 .portfolioGithubLive {
   width: 100%;
-  display: flex; 
-  justify-content: space-between; }
+  display: flex;
+  justify-content: space-between;
+}
 
 .portfolioGithubLive p:first-child {
   order: 1;
@@ -372,9 +367,6 @@ h3 {
 .portfolioGithubLive p:last-child {
   order: 2;
 }
-
-
-
 
 /* Testimonial */
 .testimonialSection {
@@ -410,7 +402,7 @@ h3 {
   align-items: center;
   gap: 21px;
 }
-.ClientAvatar{
+.ClientAvatar {
   border-radius: 20%;
 }
 .testimonialAuthorName {
@@ -570,7 +562,7 @@ input[type="checkbox"] {
   .heroSection {
     display: flex;
     flex-direction: column-reverse;
-    padding:60px;
+    padding: 60px;
   }
   .heroSectionTitle,
   .heroSectionDescription,
@@ -597,18 +589,18 @@ input[type="checkbox"] {
   .portfolioContainerBox {
     gap: 30px;
   }
-  .contactFormContainer{
+  .contactFormContainer {
     width: 100%;
     justify-content: center;
   }
   .heroSection,
-.skillsSection,
-.aboutSection,
-.portfolioSection,
-.contactSection,
-.footerContainer{
-  padding: 50px;
-}
+  .skillsSection,
+  .aboutSection,
+  .portfolioSection,
+  .contactSection,
+  .footerContainer {
+    padding: 50px;
+  }
   .skillsSection,
   .testimonialSection,
   .contactSection,
@@ -736,23 +728,26 @@ input[type="checkbox"] {
 }
 /* media Query for below */
 @media screen and (max-width: 600px) {
-.sectionTitle,
-.subTitle{
-  font-size: 17px;
-}
-.heroSectionTitle, .skillsSectionHeading, .sectionHeading,.skillsSectionTitle{
-  font-size: 21px;
-}
-.heroSectionDescription,.footerContent{
-  font-size: 16px;
-}
-.heroSection,
-.skillsSection,
-.aboutSection,
-.portfolioSection,
-.contactSection,
-.footerContainer{
-  padding: 40px;
-}
-
+  .sectionTitle,
+  .subTitle {
+    font-size: 17px;
+  }
+  .heroSectionTitle,
+  .skillsSectionHeading,
+  .sectionHeading,
+  .skillsSectionTitle {
+    font-size: 21px;
+  }
+  .heroSectionDescription,
+  .footerContent {
+    font-size: 16px;
+  }
+  .heroSection,
+  .skillsSection,
+  .aboutSection,
+  .portfolioSection,
+  .contactSection,
+  .footerContainer {
+    padding: 40px;
+  }
 }
