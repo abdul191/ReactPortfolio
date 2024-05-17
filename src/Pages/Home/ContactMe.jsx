@@ -2,7 +2,7 @@ const ContactMe = () => {
   return (
     <section id="ContactMe" className="contactSection">
       <div>
-        <p className="subTitle">Get In Touch</p>
+        <p className="sectionTitle">Get In Touch</p>
         <h2 className="sectionHeading">Contact Me</h2>
         <p className="textMd">
           Feel free to reach out to me with any inquiries or questions. {"I'm"}{" "}

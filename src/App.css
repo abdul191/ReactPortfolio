@@ -83,7 +83,6 @@ p {
 
 /*Global section ends here  */
 
-/* Hero Section */
 /* Headings */
 h2 {
   font-size: 48px;
@@ -100,28 +99,14 @@ h3 {
   color: var(--black);
   font-size: 14px;
 }
-
-/* Section titles */
-/* Skills and about me */
+/* SectionTitles */
 .sectionTitle {
   color: var(--headingColor);
   font-size: 21px;
-  text-align: center;
-  font-weight: 600;
-  line-height: 32px;
-  display: flex;
-  align-items: flex-start;
-}
-.subTitle {
-  color: var(--headingColor);
-  font-size: 21px;
   font-weight: 600;
   line-height: 32px;
 }
 
-/* Portfolio Testimonil & contact Me  */
-
-/* Section Titles Ends*/
 /* Navbar Style */
 .navbar {
   display: flex;
@@ -138,12 +123,7 @@ h3 {
 .navbarItems > ul {
   list-style: none;
   display: flex;
-  align-items: flex-start;
   gap: 43px;
-  text-decoration: none;
-}
-.navbarItems ul > li > a {
-  text-decoration: none;
 }
 .navbarContent {
   color: var(--darkBlue);
