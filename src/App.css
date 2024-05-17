@@ -241,85 +241,63 @@ h3 {
   display: flex;
   padding: 85px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 80px;
 }
 .portfolioContainerBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 .portfolioContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 21px;
 }
 .porfolioSectionContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
   gap: 42px;
 }
-.portfolioSectionImg {
-  border-radius: 8px;
-  width: 100%;
-}
 .portfolioSectionImg > img {
+  border-radius: 5%;
   width: 100%;
 }
 .portfolioSectionCard {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
-  background: #fff;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 5%;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 .portfolioSectionCard:hover,
 .testimonialSectionCard:hover {
   transform: scale(1.03);
 }
-
 .portfolioSectionCardContent {
   display: flex;
   padding: 32px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 32px;
-  align-self: stretch;
 }
 .portfolioSectionTitle {
   color: var(--headingColor);
 }
 .porfolioLink {
   text-decoration: none;
-  display: flex;
-  gap: 16px;
-  padding-bottom: 10;
   font-weight: 600;
 }
-
 .portfolioGithubLive {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
 .portfolioGithubLive p:first-child {
-  order: 1;
-}
-
-.portfolioGithubLive p:last-child {
   order: 2;
 }
-
+.portfolioGithubLive p:last-child {
+  order: 1;
+}
 /* Testimonial */
 .testimonialSection {
   display: flex;
