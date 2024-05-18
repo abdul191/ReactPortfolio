@@ -409,11 +409,7 @@ input[type="checkbox"] {
 .footerSocialIcon > ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   gap: 16px;
-  flex-shrink: 0;
-  text-decoration: none;
 }
 .divider {
   margin: 42px;
@@ -433,9 +429,7 @@ input[type="checkbox"] {
   font-weight: 400;
   line-height: 28px;
 }
-
 /* Media Queries Responsive Screens */
-
 @media only screen and (max-width: 1800px) {
   .heroSectionTitle {
     font-size: 68px;
@@ -465,7 +459,6 @@ input[type="checkbox"] {
     font-size: 17px;
   }
 }
-
 /* max width 1200px */
 @media only screen and (max-width: 1200px) {
   .btnOutlinePrimary {
@@ -474,7 +467,6 @@ input[type="checkbox"] {
   .heroSection {
     display: flex;
     flex-direction: column-reverse;
-    padding: 60px;
   }
   .heroSectionTitle,
   .heroSectionDescription,
@@ -558,7 +550,6 @@ input[type="checkbox"] {
     padding-left: 20px;
   }
 }
-
 /* Hamburger menu */
 .navHamburger {
   display: none;
@@ -578,18 +569,15 @@ input[type="checkbox"] {
   border-radius: 0.6rem;
   transition: all ease-in-out 0.2s;
 }
-
 /*media queries for hamburger */
 @media screen and (max-width: 1200px) {
   .navHamburger {
     display: flex;
     z-index: 200;
   }
-
   .navbarItems {
     display: flex;
   }
-
   .navbarItems {
     position: absolute;
     display: flex;
@@ -601,7 +589,6 @@ input[type="checkbox"] {
     width: 100%;
     transition: all ease-in-out 0.4s;
   }
-
   .navbarItems ul {
     flex-direction: column;
     align-items: center;
@@ -609,36 +596,29 @@ input[type="checkbox"] {
     padding: 3rem 0 0.6rem;
     z-index: -100;
   }
-
   .navbarItems ul li {
     text-align: center;
   }
-
   .navbarItems ul li a {
     padding: 0.5rem;
   }
-
   .navbarItems {
     z-index: -100;
   }
-
   .navbarItems.active {
     top: 30px;
   }
-
   .navHamburger.active :nth-child(1) {
     transform: rotate(45deg) translate(0.35rem, 0.15rem);
   }
-
   .navHamburger.active :nth-child(2) {
     opacity: 0;
   }
-
   .navHamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.35rem, -0.15rem);
   }
 }
-/* media Query for below */
+/* media Query for below 600px*/
 @media screen and (max-width: 600px) {
   .sectionTitle,
   .subTitle {
