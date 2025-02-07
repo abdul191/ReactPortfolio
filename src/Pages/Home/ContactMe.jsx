@@ -1,4 +1,23 @@
+import emailjs from "@emailjs/browser";
+import { useRef } from 'react';
+
 const ContactMe = () => {
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_gx0f59h', 'template_gvovijl', form.current, 'xnjqtmd8RksRUL4_y')
+      .then((result) => {
+        console.log('Email successfully sent!', result);
+
+        alert('Message sent successfully!');
+      }, (error) => {
+        console.log('Failed to send email:', error.text);
+        alert('Failed to send the message, please try again.');
+      });
+  };
+
   return (
     <section id="ContactMe" className="contactSection">
       <div>
@@ -6,10 +25,9 @@ const ContactMe = () => {
         <h2 className="sectionHeading">Contact Me</h2>
         <p className="textMd">
           Feel free to reach out to me with any inquiries or questions. {"I'm"}{" "}
-          here to help!
         </p>
       </div>
-      <form className="contactFormContainer">
+      <form ref={form} className="contactFormContainer" onSubmit={handleSubmit}>
         <div className="container">
           <label htmlFor="firstName" className="contactLabel">
             <span className="textMd">First Name</span>
@@ -59,7 +77,7 @@ const ContactMe = () => {
 
         <label htmlFor="chooseTopic" className="contactLabel">
           <span className="textMd">Choose a topic</span>
-          <select id="ChooseTopic" className="contactInput textMd">
+          <select id="ChooseTopic" name="chooseTopic" className="contactInput textMd">
             <option> Select One ... </option>
             <option> Front-end Development</option>
             <option>React Development</option>
@@ -73,6 +91,7 @@ const ContactMe = () => {
           <textarea
             id="message"
             className="contactInput textMd"
+            name="message"
             rows="8"
             placeholder="Type Your message . . . "></textarea>
         </label>
@@ -81,7 +100,7 @@ const ContactMe = () => {
           <span className="textSm">Check to accept terms.</span>
         </label>
         <div>
-          <button className="btn btnPrimary contactFormBtn"> Submit </button>
+          <button type="submit" className="btn btnPrimary contactFormBtn"> Submit </button>
         </div>
       </form>
     </section>
