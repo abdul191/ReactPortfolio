@@ -5,6 +5,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
 }
+
 h1,
 h2,
 h3,
@@ -14,6 +15,7 @@ h6,
 p {
   margin: 0;
 }
+
 :root {
   --primary: #3f2b96;
   --headingColor: #494949;
@@ -23,6 +25,7 @@ p {
   --black: #000;
   --white: #fff;
 }
+
 .btn {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   display: inline-block;
@@ -35,29 +38,35 @@ p {
   border-radius: 4px;
   transition: background-color 1s;
 }
+
 .btnOutlinePrimary {
   color: var(--primary);
   background-color: var(--white);
   border: 1px solid var(--primary);
 }
+
 .btnOutlinePrimary:hover {
   color: var(--white);
   background-color: var(--primary);
 }
+
 .btnPrimary {
   color: var(--white);
   background-color: var(--primary);
   border: 1px solid var(--primary);
 }
+
 .btnPrimary:hover {
   color: var(--primary);
   background-color: var(--white);
 }
+
 .svg {
   width: 70px;
   height: 70px;
   cursor: pointer;
 }
+
 .btnGithub {
   color: var(--white);
   background-color: var(--github);
@@ -68,14 +77,17 @@ p {
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
   gap: 16px;
 }
+
 .btnGithub:hover {
   color: var(--black);
   background-color: var(--white);
 }
+
 .arrowBtn {
   color: var(--darkBlue);
   text-decoration: none;
 }
+
 .arrowBtn:hover {
   color: var(--github);
   border-bottom: 1px solid var(--github);
@@ -87,18 +99,22 @@ p {
 h2 {
   font-size: 48px;
 }
+
 h3 {
   font-size: 24px;
 }
+
 /* paragraph */
 .textMd {
   color: var(--darkBlue);
   font-size: 16px;
 }
+
 .textSm {
   color: var(--black);
   font-size: 14px;
 }
+
 /* SectionTitles */
 .sectionTitle {
   color: var(--headingColor);
@@ -106,6 +122,7 @@ h3 {
   font-weight: 600;
   line-height: 32px;
 }
+
 /* Navbar Style */
 .navbar {
   display: flex;
@@ -119,19 +136,23 @@ h3 {
   left: 0;
   right: 0;
 }
-.navbarItems > ul {
+
+.navbarItems>ul {
   list-style: none;
   display: flex;
   gap: 43px;
 }
+
 .navbarContent {
   color: var(--darkBlue);
   font-size: 16px;
   cursor: pointer;
 }
+
 .navbarActiveContent {
   color: var(--primary);
 }
+
 /* hero Section Style */
 .heroSection {
   display: grid;
@@ -141,34 +162,41 @@ h3 {
   gap: 32px;
   background-color: var(--backgroundShade);
 }
+
 .heroSectionContentBox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
 }
+
 .heroSectionContent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 22px;
 }
+
 .heroSectionTitle {
   color: var(--headingColor);
   font-size: 75px;
 }
+
 .heroSectionTitleColor {
   color: var(--primary);
 }
+
 .heroSectionDescription {
   color: var(--darkBlue);
   font-size: 24px;
   line-height: 36px;
 }
-.heroSectionImg > img {
+
+.heroSectionImg>img {
   width: 100%;
   height: 100%;
 }
+
 /* Skills Section Style */
 .skillsSection {
   display: flex;
@@ -176,15 +204,18 @@ h3 {
   padding: 85px;
   gap: 100px;
 }
+
 .skillsSectionHeading {
   color: var(--headingColor);
   font-size: 64px;
 }
+
 .skillsSectionContainer {
   display: grid;
   gap: 42px;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .skillsSectionCard {
   display: flex;
   padding: 32px;
@@ -195,35 +226,43 @@ h3 {
   background-color: var(--backgroundShade);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
+
 .skillsSectionCard:hover {
   transform: scale(1.03);
 }
+
 .skillsSectionCard:hover .skillsSectionDescription {
   color: var(--darkBlue);
 }
+
 .skillSectionImg {
   display: flex;
   border-radius: 10px;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
 }
+
 .skillsImg {
   border-radius: 5%;
   width: 150px;
   height: 150px;
 }
+
 .skillsSectionCardContent {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
+
 .skillsSectionTitle {
   color: var(--headingColor);
   font-size: 32px;
 }
+
 .skillsSectionDescription {
   color: var(--black);
   font-size: 23px;
 }
+
 /* AboutSection */
 .aboutSection {
   display: grid;
@@ -232,10 +271,12 @@ h3 {
   gap: 144px;
   grid-template-columns: repeat(2, 1fr);
 }
-.aboutSectionImg > img {
+
+.aboutSectionImg>img {
   width: 100%;
   height: 100%;
 }
+
 /* Portfolio Section */
 .portfolioSection {
   display: flex;
@@ -243,26 +284,31 @@ h3 {
   flex-direction: column;
   gap: 80px;
 }
+
 .portfolioContainerBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .portfolioContainer {
   display: flex;
   flex-direction: column;
   gap: 21px;
 }
+
 .porfolioSectionContainer {
   display: flex;
   align-items: center;
   gap: 42px;
   width: 100%;
 }
-.portfolioSectionImg > img {
+
+.portfolioSectionImg>img {
   border-radius: 5%;
   width: 100%;
 }
+
 .portfolioSectionCard {
   display: flex;
   flex-direction: column;
@@ -272,33 +318,41 @@ h3 {
   border-radius: 5%;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
+
 .portfolioSectionCard:hover,
 .testimonialSectionCard:hover {
   transform: scale(1.03);
 }
+
 .portfolioSectionCardContent {
   display: flex;
   padding: 32px;
   flex-direction: column;
   gap: 32px;
 }
+
 .portfolioSectionTitle {
   color: var(--headingColor);
 }
+
 .porfolioLink {
   text-decoration: none;
   font-weight: 600;
 }
+
 .portfolioGithubLive {
   display: flex;
   justify-content: space-between;
 }
+
 .portfolioGithubLive p:first-child {
   order: 2;
 }
+
 .portfolioGithubLive p:last-child {
   order: 1;
 }
+
 /* Testimonial */
 .testimonialSection {
   display: flex;
@@ -307,9 +361,11 @@ h3 {
   gap: 80px;
   background-color: var(--backgroundShade);
 }
+
 .sectionHeading {
   color: var(--headingColor);
 }
+
 .testimonialSectionCard {
   display: flex;
   padding: 42px;
@@ -319,26 +375,32 @@ h3 {
   border: 1px solid #006b61;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
+
 .testimonialSectionCardReview {
   display: flex;
   gap: 5px;
 }
+
 .tesitmonialSectionCardAuthorDetail {
   display: flex;
   align-items: center;
   gap: 21px;
 }
+
 .ClientAvatar {
   border-radius: 5%;
 }
+
 .testimonialAuthorName {
   font-weight: 600;
   color: var(--headingColor);
 }
+
 .testimonialAuthorDesignation {
   color: var(--darkBlue);
   font-size: 16px;
 }
+
 /* contact Section */
 .contactSection {
   display: flex;
@@ -348,23 +410,27 @@ h3 {
   text-align: center;
   gap: 64px;
 }
+
 .contactFormContainer {
   display: grid;
   width: 40%;
   row-gap: 32px;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, auto);
   column-gap: 32px;
   row-gap: 32px;
 }
+
 .contactLabel {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
+
 .contactInput {
   font-family: "Roboto";
   padding: 16px;
@@ -373,15 +439,18 @@ h3 {
   border: 1px solid var(--primary);
   background: var(--white);
 }
+
 .checkboxLabel {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 input[type="checkbox"] {
   width: 21px;
   height: 21px;
 }
+
 /* footer Section */
 .footerContainer {
   display: flex;
@@ -392,13 +461,15 @@ input[type="checkbox"] {
   align-items: center;
   align-self: stretch;
 }
+
 .footerLinkContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
 }
-.footerItems > ul {
+
+.footerItems>ul {
   list-style: none;
   display: flex;
   align-items: flex-start;
@@ -406,150 +477,33 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 
-.footerSocialIcon > ul {
+.footerSocialIcon>ul {
   list-style: none;
   display: flex;
   gap: 16px;
 }
+
 .divider {
   margin: 42px;
   height: 1px;
   width: 100%;
   background: rgba(40, 41, 56, 0.55);
 }
+
 .footerContentContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
 }
+
 .footerContent {
   color: var(--black);
   font-size: 18.667px;
   font-weight: 400;
   line-height: 28px;
 }
-/* Media Queries Responsive Screens */
-@media only screen and (max-width: 1800px) {
-  .heroSectionTitle {
-    font-size: 68px;
-  }
-  .skillsSectionTitle {
-    font-size: 28px;
-  }
-}
-/* max width 1600px */
-@media only screen and (max-width: 1600px) {
-  .skillsSectionHeading {
-    font-size: 54px;
-  }
-  .skillsSectionContainer {
-    gap: 16px;
-  }
-  .skillsSectionCard {
-    gap: 28px;
-  }
-  .skillsSectionCardContent {
-    gap: 20px;
-  }
-  .skillsSectionTitle {
-    font-size: 23px;
-  }
-  .skillsSectionDescription {
-    font-size: 17px;
-  }
-}
-/* max width 1200px */
-@media only screen and (max-width: 1200px) {
-  .btnOutlinePrimary {
-    display: none;
-  }
-  .heroSection {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .heroSectionTitle,
-  .heroSectionDescription,
-  .footerContent {
-    text-align: center;
-    font-size: 17px;
-  }
-  .skillsSectionContainer,
-  .aboutSection,
-  .porfolioSectionContainer,
-  .portfolioContainerBox,
-  .footerLinkContainer,
-  .footerItems > ul,
-  .footerContentContainer {
-    display: flex;
-    flex-direction: column;
-  }
-  .skillsSection,
-  .portfolioContainer,
-  .heroSectionContent,
-  .heroSectionContentBox {
-    align-items: center;
-  }
-  .portfolioContainerBox {
-    gap: 30px;
-  }
-  .contactFormContainer {
-    width: 100%;
-    justify-content: center;
-  }
-  .heroSection,
-  .skillsSection,
-  .aboutSection,
-  .portfolioSection,
-  .contactSection,
-  .footerContainer {
-    padding: 50px;
-  }
-  .skillsSection,
-  .testimonialSection,
-  .contactSection,
-  .footerContainer {
-    gap: 20px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .aboutSection {
-    gap: 20px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-  }
-  .testimonialSectionCard {
-    padding: 25px;
-  }
-  .heroSectionTitle,
-  .skillsSectionHeading,
-  .sectionHeading {
-    font-size: 25px;
-  }
-  .heroSectionContentBox {
-    gap: 10px;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .footerSocialIcon > ul,
-  .footerItems > ul {
-    padding: 0;
-    align-items: center;
-  }
-  .divider {
-    margin: 20px;
-  }
-  .svg {
-    width: 45px;
-    height: 45px;
-  }
-  .navbar {
-    padding-left: 20px;
-  }
-}
+
 /* Hamburger menu */
 .navHamburger {
   display: none;
@@ -561,6 +515,7 @@ input[type="checkbox"] {
   top: 25px;
   right: 25px;
 }
+
 .navHamburgerLine {
   display: block;
   height: 0.21rem;
@@ -569,15 +524,187 @@ input[type="checkbox"] {
   border-radius: 0.6rem;
   transition: all ease-in-out 0.2s;
 }
+
+/*Whatsapp  */
+.whatsappContainer {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.whatsappContainer:hover {
+  transform: scale(1.1);
+}
+
+.whatsappIcon {
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Media Queries Responsive Screens */
+@media only screen and (max-width: 1800px) {
+  .heroSectionTitle {
+    font-size: 68px;
+  }
+
+  .skillsSectionTitle {
+    font-size: 28px;
+  }
+}
+
+/* max width 1600px */
+@media only screen and (max-width: 1600px) {
+  .skillsSectionHeading {
+    font-size: 54px;
+  }
+
+  .skillsSectionContainer {
+    gap: 16px;
+  }
+
+  .skillsSectionCard {
+    gap: 28px;
+  }
+
+  .skillsSectionCardContent {
+    gap: 20px;
+  }
+
+  .skillsSectionTitle {
+    font-size: 23px;
+  }
+
+  .skillsSectionDescription {
+    font-size: 17px;
+  }
+}
+
+/* max width 1200px */
+@media only screen and (max-width: 1200px) {
+  .btnOutlinePrimary {
+    display: none;
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .heroSectionTitle,
+  .heroSectionDescription,
+  .footerContent {
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .skillsSectionContainer,
+  .aboutSection,
+  .porfolioSectionContainer,
+  .portfolioContainerBox,
+  .footerLinkContainer,
+  .footerItems>ul,
+  .footerContentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skillsSection,
+  .portfolioContainer,
+  .heroSectionContent,
+  .heroSectionContentBox {
+    align-items: center;
+  }
+
+  .portfolioContainerBox {
+    gap: 30px;
+  }
+
+  .contactFormContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroSection,
+  .skillsSection,
+  .aboutSection,
+  .portfolioSection,
+  .contactSection,
+  .footerContainer {
+    padding: 50px;
+  }
+
+  .skillsSection,
+  .testimonialSection,
+  .contactSection,
+  .footerContainer {
+    gap: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .aboutSection {
+    gap: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .testimonialSectionCard {
+    padding: 25px;
+  }
+
+  .heroSectionTitle,
+  .skillsSectionHeading,
+  .sectionHeading {
+    font-size: 25px;
+  }
+
+  .heroSectionContentBox {
+    gap: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footerSocialIcon>ul,
+  .footerItems>ul {
+    padding: 0;
+    align-items: center;
+  }
+
+  .divider {
+    margin: 20px;
+  }
+
+  .svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .navbar {
+    padding-left: 20px;
+  }
+}
+
 /*media queries for hamburger */
 @media screen and (max-width: 1200px) {
   .navHamburger {
     display: flex;
     z-index: 200;
   }
+
   .navbarItems {
     display: flex;
   }
+
   .navbarItems {
     position: absolute;
     display: flex;
@@ -589,6 +716,7 @@ input[type="checkbox"] {
     width: 100%;
     transition: all ease-in-out 0.4s;
   }
+
   .navbarItems ul {
     flex-direction: column;
     align-items: center;
@@ -596,44 +724,56 @@ input[type="checkbox"] {
     padding: 3rem 0 0.6rem;
     z-index: -100;
   }
+
   .navbarItems ul li {
     text-align: center;
   }
+
   .navbarItems ul li a {
     padding: 0.5rem;
   }
+
   .navbarItems {
     z-index: -100;
   }
+
   .navbarItems.active {
     top: 30px;
   }
+
   .navHamburger.active :nth-child(1) {
     transform: rotate(45deg) translate(0.35rem, 0.15rem);
   }
+
   .navHamburger.active :nth-child(2) {
     opacity: 0;
   }
+
   .navHamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.35rem, -0.15rem);
   }
 }
+
 /* media Query for below 600px*/
 @media screen and (max-width: 600px) {
+
   .sectionTitle,
   .subTitle {
     font-size: 17px;
   }
+
   .heroSectionTitle,
   .skillsSectionHeading,
   .sectionHeading,
   .skillsSectionTitle {
     font-size: 21px;
   }
+
   .heroSectionDescription,
   .footerContent {
     font-size: 16px;
   }
+
   .heroSection,
   .skillsSection,
   .aboutSection,
