@@ -12,7 +12,7 @@ function HeroSections() {
             <span className="heroSectionTitleColor">
               <TypeAnimation
                 sequence={[
-                  "Web ",
+                  "Software ",
                   1500,
                   "Frontend ",
                   1500,
@@ -20,13 +20,13 @@ function HeroSections() {
                   1500,
                   "Mernstack",
                   1500,
-                  () => {},
+                  () => { },
                 ]}
                 wrapper="span"
                 speed={{ type: "keyStrokeDelayInMs", value: 200 }}
                 repeat={Infinity}
               />
-            </span>{" "}
+            </span>
             <br />
             Developer
           </h1>
