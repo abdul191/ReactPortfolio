@@ -1,8 +1,8 @@
 import "./App.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/HomeScreen"
-import Navbar from "./Pages/Home/Navbar"
-import Whatsapp from "./Pages/Home/Whatsapp";
+import Navbar from "./components/Navbar"
+import Whatsapp from "./components/Whatsapp";
 function App() {
   return (
     <div className="App">

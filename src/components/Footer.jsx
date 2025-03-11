@@ -1,17 +1,17 @@
 import { Link } from "react-scroll";
-import Logo from "../../assets/svg/logo-apple-appstore-svgrepo-com.svg";
+import Logo from "../assets/svg/logo-apple-appstore-svgrepo-com.svg";
 function Footer() {
   return (
     <footer className="footerContainer">
       <div className="footerLinkContainer">
         <div>
-        <Link
+          <Link
             spy={true}
             smooth={true}
             offset={-70}
             duration={1000}
             to="heroSection">
-          <img src={Logo} alt="logo" className="svg"  to="heroSection"/>
+            <img src={Logo} alt="logo" className="svg" to="heroSection" />
           </Link>
         </div>
         <div className="footerItems">

@@ -402,6 +402,24 @@ h3 {
   font-size: 16px;
 }
 
+.rightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Modes */
+.modes {
+  display: flex;
+  justify-content: center;
+}
+
+.modesIcon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
 /* contact Section */
 .contactSection {
   display: flex;
@@ -513,7 +531,6 @@ input[type="checkbox"] {
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  top: 25px;
   right: 25px;
 }
 
@@ -692,6 +709,12 @@ input[type="checkbox"] {
 
   .navbar {
     padding-left: 20px;
+  }
+
+  .modesIcon {
+    font-size: 25px;
+    position: relative;
+    left: 30px;
   }
 }
 

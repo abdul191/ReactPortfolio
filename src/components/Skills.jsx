@@ -1,8 +1,8 @@
-import Data from '../../data/index.json';
-import frontendImg from '../../assets/images/frontend.png';
-import reactImg from '../../assets/images/react.jpg';
-import responsiveDesignImg from '../../assets/images/responsiveDesign.jpg';
-import versionControlImg from '../../assets/images/versionControl.jpg';
+import Data from '../data/index.json';
+import frontendImg from '../assets/images/frontend.png';
+import reactImg from '../assets/images/react.jpg';
+import responsiveDesignImg from '../assets/images/responsiveDesign.jpg';
+import versionControlImg from '../assets/images/versionControl.jpg';
 
 function Skills() {
   const skillImages = {

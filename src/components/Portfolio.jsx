@@ -1,8 +1,8 @@
-import data from "../../data/index.json";
-import githubLogo from "../../assets/svg/github.svg";
-import queueManagement from "../../assets/images/hospitalManagement.jpg";
-import facilityManagement from "../../assets/images/facilityManagement.jpg";
-import noteKeeper from "../../assets/images/keeper.jpg";
+import data from "../data/index.json";
+import githubLogo from "../assets/svg/github.svg";
+import queueManagement from "../assets/images/hospitalManagement.jpg";
+import facilityManagement from "../assets/images/facilityManagement.jpg";
+import noteKeeper from "../assets/images/keeper.jpg";
 function Portfolio() {
   const portfolioImages = {
     "Queue Management System": queueManagement,

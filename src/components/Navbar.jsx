@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import Logo from "../../assets/svg/logo-apple-appstore-svgrepo-com.svg";
+import Logo from "../assets/svg/logo-apple-appstore-svgrepo-com.svg";
+import Modes from "./Modes";
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
   const toggleNav = () => {
@@ -115,17 +116,21 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <Link
-          onClick={closeMenu}
-          activeClass="navbarActiveContent"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          to="ContactMe"
-          className="btn btnOutlinePrimary">
-          Contact Me
-        </Link>
+        <div className="rightContainer">
+          <Modes />
+          <Link
+            onClick={closeMenu}
+            activeClass="navbarActiveContent"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            to="ContactMe"
+            className="btn btnOutlinePrimary">
+            Contact Me
+          </Link>
+        </div>
+
       </nav>
     </>
   );

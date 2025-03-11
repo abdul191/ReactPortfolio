@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
-import Hero from "../../assets/images/hero.png";
+import Hero from "../assets/images/hero.png";
 import { FaDownload } from "react-icons/fa6";
-import resume from "../../assets/Resume.pdf";
+import resume from "../assets/Resume.pdf";
 function HeroSections() {
   return (
     <section id="heroSection" className="heroSection">
