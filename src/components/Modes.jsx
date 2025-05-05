@@ -1,17 +1,15 @@
-import { useState } from "react";
 import { IoIosContrast } from "react-icons/io";
 import { MdOutlineWbSunny } from "react-icons/md";
+import { useTheme } from "../context/ThemeContext";
 
 const Modes = () => {
-    const [mode, setMode] = useState(true);
-    const toggleIcon = () => {
-        setMode(!mode);
-    };
+    const { theme, toggleTheme } = useTheme();
+
     return (
-        <div onClick={toggleIcon} className="modes">
-            {mode ? <MdOutlineWbSunny className="modesIcon" /> : <IoIosContrast className="modesIcon" />}
+        <div onClick={toggleTheme} className="modes">
+            {theme === 'light' ? <MdOutlineWbSunny className="modesIcon" /> : <IoIosContrast className="modesIcon" />}
         </div>
     );
 }
 
-export default Modes;
+export default Modes

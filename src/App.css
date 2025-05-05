@@ -26,6 +26,17 @@ p {
   --white: #fff;
 }
 
+body.dark-theme {
+  --primary: #7b61ff;
+  --headingColor: #e0e0e0;
+  --backgroundShade: #121212;
+  --github: #ff4081;
+  --darkBlue: #fff;
+  --black: #fff;
+  --white: #1e1e1e;
+}
+
+
 .btn {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   display: inline-block;
@@ -45,15 +56,31 @@ p {
   border: 1px solid var(--primary);
 }
 
+body.dark-theme .btnOutlinePrimary {
+  color: var(--black);
+  background-color: var(--primary);
+}
+
 .btnOutlinePrimary:hover {
   color: var(--white);
   background-color: var(--primary);
+}
+
+body.dark-theme .btnOutlinePrimary:hover {
+  /* color: var(--white); */
+  border: 1px solid var(--primary);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .btnPrimary {
   color: var(--white);
   background-color: var(--primary);
   border: 1px solid var(--primary);
+}
+
+body.dark-theme .btnPrimary {
+  color: var(--black);
 }
 
 .btnPrimary:hover {
@@ -78,9 +105,17 @@ p {
   gap: 16px;
 }
 
+body.dark-theme .btnGithub {
+  color: var(--black);
+}
+
 .btnGithub:hover {
   color: var(--black);
   background-color: var(--white);
+}
+
+body.dark-theme .btnGithub:hover {
+  border: 1px solid var(--github);
 }
 
 .arrowBtn {
@@ -164,6 +199,10 @@ h3 {
   background-color: var(--backgroundShade);
 }
 
+body.dark-theme .heroSection {
+  background-color: black;
+}
+
 .heroSectionContentBox {
   display: flex;
   flex-direction: column;
@@ -204,6 +243,10 @@ h3 {
   flex-direction: column;
   padding: 85px;
   gap: 100px;
+}
+
+body.dark-theme .skillsSection {
+  background-color: var(--backgroundShade);
 }
 
 .skillsSectionHeading {
@@ -273,6 +316,10 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
 }
 
+body.dark-theme .aboutSection {
+  background-color: black;
+}
+
 .aboutSectionImg>img {
   width: 100%;
   height: 100%;
@@ -284,6 +331,10 @@ h3 {
   padding: 85px;
   flex-direction: column;
   gap: 80px;
+}
+
+body.dark-theme .portfolioSection {
+  background-color: var(--backgroundShade);
 }
 
 .portfolioContainerBox {
@@ -303,7 +354,9 @@ h3 {
   align-items: center;
   gap: 42px;
   width: 100%;
+
 }
+
 
 .portfolioSectionImg>img {
   border-radius: 5%;
@@ -363,6 +416,10 @@ h3 {
   background-color: var(--backgroundShade);
 }
 
+body.dark-theme .testimonialSection {
+  background-color: black;
+}
+
 .sectionHeading {
   color: var(--headingColor);
 }
@@ -413,6 +470,7 @@ h3 {
 .modes {
   display: flex;
   justify-content: center;
+  color: var(--darkBlue);
 }
 
 .modesIcon {
@@ -428,6 +486,10 @@ h3 {
   align-items: center;
   text-align: center;
   gap: 64px;
+}
+
+body.dark-theme .contactSection {
+  background-color: var(--backgroundShade);
 }
 
 .contactFormContainer {
@@ -481,6 +543,10 @@ input[type="checkbox"] {
   align-self: stretch;
 }
 
+body.dark-theme .footerContainer {
+  background-color: var(--white);
+}
+
 .footerLinkContainer {
   display: flex;
   justify-content: space-between;
@@ -500,6 +566,12 @@ input[type="checkbox"] {
   list-style: none;
   display: flex;
   gap: 16px;
+}
+
+.footerIcon {
+  color: var(--darkBlue);
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .divider {
@@ -523,6 +595,10 @@ input[type="checkbox"] {
   line-height: 28px;
 }
 
+.footerIcon {
+  fill: var(--darkBlue);
+}
+
 /* Hamburger menu */
 .navHamburger {
   display: none;
@@ -541,6 +617,10 @@ input[type="checkbox"] {
   background-color: #000;
   border-radius: 0.6rem;
   transition: all ease-in-out 0.2s;
+}
+
+body.dark-theme .navHamburgerLine {
+  background-color: white;
 }
 
 /*Whatsapp  */
@@ -739,6 +819,10 @@ input[type="checkbox"] {
     left: 0;
     width: 100%;
     transition: all ease-in-out 0.4s;
+  }
+
+  body.dark-theme .navbarItems {
+    background-color: #1e1e1e;
   }
 
   .navbarItems ul {

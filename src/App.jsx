@@ -1,9 +1,15 @@
-import "./App.css"
+import { useEffect } from 'react';
+import { useTheme } from './context/ThemeContext';
+import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/HomeScreen"
 import Navbar from "./components/Navbar"
 import Whatsapp from "./components/Whatsapp";
 function App() {
+  const { theme } = useTheme();
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
   return (
     <div className="App">
       <Router>
