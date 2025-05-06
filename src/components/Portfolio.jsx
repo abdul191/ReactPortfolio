@@ -3,7 +3,9 @@ import githubLogo from "../assets/svg/github.svg";
 import queueManagement from "../assets/images/hospitalManagement.jpg";
 import facilityManagement from "../assets/images/facilityManagement.jpg";
 import noteKeeper from "../assets/images/keeper.jpg";
+import { useTranslation } from "react-i18next";
 function Portfolio() {
+  const { t } = useTranslation();
   const portfolioImages = {
     "Queue Management System": queueManagement,
     "Note Keeper Application": noteKeeper,
@@ -13,13 +15,13 @@ function Portfolio() {
     <section className="portfolioSection" id="portfolioSection">
       <div className="portfolioContainerBox">
         <div className="portfolioContainer">
-          <p className="sectionTitle">Recent Projects</p>
-          <h2 className="sectionHeading">My Portfolio</h2>
+          <p className="sectionTitle">{t('portfolio.title')}</p>
+          <h2 className="sectionHeading">{t('portfolio.heading')}</h2>
         </div>
         <div>
           <a href="https://github.com/abdul191" className="btn btnGithub">
             <img src={githubLogo} alt="github logo" className="githubLogo" />
-            Visit My GitHub
+            {t('portfolio.heading')}
           </a>
         </div>
       </div>
@@ -31,13 +33,13 @@ function Portfolio() {
             </div>
             <div className="portfolioSectionCardContent">
               <div>
-                <h3 className="portfolioSectionTitle">{item.title}</h3>
-                <p className="textMd">{item.description}</p>
+                <h3 className="portfolioSectionTitle">{t(`portfolio.projects.${index}.title`)}</h3>
+                <p className="textMd">{t(`portfolio.projects.${index}.description`)}</p>
               </div>
               <div className="portfolioGithubLive">
                 <p className="textSm porfolioLink">
                   <a href={item.githubLink} className="arrowBtn">
-                    {item.link}
+                    {t(`portfolio.projects.${index}.link`)}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"

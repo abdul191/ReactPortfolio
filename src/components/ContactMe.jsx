@@ -1,8 +1,10 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from 'react';
+import { useTranslation } from "react-i18next";
 
 const ContactMe = () => {
   const form = useRef();
+  const { t } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,86 +23,88 @@ const ContactMe = () => {
   return (
     <section id="ContactMe" className="contactSection">
       <div>
-        <p className="sectionTitle">Get In Touch</p>
-        <h2 className="sectionHeading">Contact Me</h2>
+        <p className="sectionTitle">{t("contact.title")}</p>
+        <h2 className="sectionHeading">{t("contact.heading")}</h2>
         <p className="textMd">
-          Feel free to reach out to me with any inquiries or questions. {"I'm"}{" "}
+          {t("contact.description")}
         </p>
       </div>
       <form ref={form} className="contactFormContainer" onSubmit={handleSubmit}>
         <div className="container">
           <label htmlFor="firstName" className="contactLabel">
-            <span className="textMd">First Name</span>
+            <span className="textMd">{t("contact.firstName")}</span>
             <input
               type="text"
               className="contactInput textMd "
               name="firstName"
               id="firstName"
               required
-              placeholder="Enter your first name."
+              placeholder={t("contact.firstName")}
             />
           </label>
           <label htmlFor="lastName" className="contactLabel">
-            <span className="textMd">Last Name</span>
+            <span className="textMd">{t("contact.lastName")}</span>
             <input
               type="text"
               className="contactInput textMd "
               name="lastName"
               id="lastName"
               required
-              placeholder="Enter your last name."
+              placeholder={t("contact.lastName")}
             />
           </label>
           <label htmlFor="email" className="contactLabel">
-            <span className="textMd">Email</span>
+            <span className="textMd">{t("contact.email")}</span>
             <input
               type="email"
               className="contactInput textMd "
               name="email"
               id="email"
               required
-              placeholder="Enter your email address."
+              placeholder={t("contact.email")}
             />
           </label>
           <label htmlFor="phoneNumber" className="contactLabel">
-            <span className="textMd">Phone Number</span>
+            <span className="textMd">{t("contact.phoneNumber")}</span>
             <input
               type="number"
               className="contactInput textMd "
               name="phoneNumber"
               id="phoneNumber"
               required
-              placeholder="Enter your phone number."
+              placeholder={t("contact.phoneNumber")}
             />
           </label>
         </div>
 
         <label htmlFor="chooseTopic" className="contactLabel">
-          <span className="textMd">Choose a topic</span>
-          <select id="ChooseTopic" name="chooseTopic" className="contactInput textMd">
-            <option> Select One ... </option>
-            <option> Front-end Development</option>
-            <option>React Development</option>
-            <option>Web Development Inquiry</option>
-            <option>Project Collaboration</option>
-            <option>General Inquiry</option>
+          <span className="textMd">{t("contact.chooseTopic")}</span>
+          <select id="chooseTopic" name="chooseTopic" className="contactInput textMd">
+            <option>{t("contact.selectOne")}</option>
+            <option>{t("contact.topics.frontend")}</option>
+            <option>{t("contact.topics.react")}</option>
+            <option>{t("contact.topics.web")}</option>
+            <option>{t("contact.topics.collab")}</option>
+            <option>{t("contact.topics.general")}</option>
           </select>
         </label>
         <label htmlFor="message" className="contactLabel">
-          <span className="textMd">Message</span>
+          <span className="textMd">{t("contact.message")}</span>
           <textarea
             id="message"
             className="contactInput textMd"
             name="message"
             rows="8"
-            placeholder="Type Your message . . . "></textarea>
+            placeholder={t("contact.placeholderMessage")}
+          ></textarea>
         </label>
         <label htmlFor="checkbox" className="checkboxLabel">
           <input type="checkbox" required name="checkbox" id="checkbox" />
-          <span className="textSm">Check to accept terms.</span>
+          <span className="textSm">{t("contact.acceptTerms")}</span>
         </label>
         <div>
-          <button type="submit" className="btn btnPrimary contactFormBtn"> Submit </button>
+          <button type="submit" className="btn btnPrimary contactFormBtn">             {t("contact.submit")}
+          </button>
         </div>
       </form>
     </section>

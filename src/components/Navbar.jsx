@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import Logo from "../assets/svg/logo-apple-appstore-svgrepo-com.svg";
 import Modes from "./Modes";
+import LanguageToggle from "./Languages";
+import { useTranslation } from 'react-i18next';
+
 function Navbar() {
+  const { t } = useTranslation();
+
   const [navActive, setNavActive] = useState(false);
   const toggleNav = () => {
     setNavActive(!navActive);
@@ -59,7 +64,7 @@ function Navbar() {
                 duration={500}
                 to="heroSection"
                 className="navbarContent">
-                Home
+                {t('navbar.home')}
               </Link>
             </li>
             <li>
@@ -72,7 +77,7 @@ function Navbar() {
                 duration={500}
                 to="myExpertise"
                 className="navbarContent">
-                My Expertise
+                {t('navbar.myExpertise')}
               </Link>
             </li>
             <li>
@@ -85,7 +90,7 @@ function Navbar() {
                 duration={500}
                 to="AboutMe"
                 className="navbarContent">
-                About Me
+                {t('navbar.aboutMe')}
               </Link>
             </li>
             <li>
@@ -98,7 +103,8 @@ function Navbar() {
                 duration={500}
                 to="portfolioSection"
                 className="navbarContent">
-                Portfolio
+                {t('navbar.portfolio')}
+
               </Link>
             </li>
             <li>
@@ -111,12 +117,14 @@ function Navbar() {
                 duration={500}
                 to="Testimonials"
                 className="navbarContent">
-                Testimonials
+                {t('navbar.testimonials')}
+
               </Link>
             </li>
           </ul>
         </div>
         <div className="rightContainer">
+          <LanguageToggle />
           <Modes />
           <Link
             onClick={closeMenu}
@@ -127,7 +135,7 @@ function Navbar() {
             duration={500}
             to="ContactMe"
             className="btn btnOutlinePrimary">
-            Contact Me
+            {t('navbar.contactMe')}
           </Link>
         </div>
 

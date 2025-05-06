@@ -1,11 +1,13 @@
 import data from "../data/index.json";
+import { useTranslation } from "react-i18next";
 function Testimonials() {
+  const { t } = useTranslation();
   return (
     <section className="testimonialSection" id="Testimonials">
       <div className="portfolioContainerBox">
         <div className="portfolioContainer">
-          <p className="sectionTitle">Client Feedback</p>
-          <h2 className="sectionHeading">Customer Feedback</h2>
+          <p className="sectionTitle">{t('testimonials.title')}</p>
+          <h2 className="sectionHeading">{t('testimonials.heading')}</h2>
         </div>
       </div>
       <div className="porfolioSectionContainer">
@@ -29,15 +31,14 @@ function Testimonials() {
               ))}
 
             </div>
-            <p className="textMd">{item.description}</p>
+            <p className="textMd">{t(`testimonials.list.${index}.description`)}</p>
             <div className="tesitmonialSectionCardAuthorDetail">
               <img src={item.src} alt="Avatar" className="ClientAvatar" />
               <div>
                 <p className="textMd testimonialAuthorName">
-                  {item.authorName}
-                </p>
+                  {t(`testimonials.list.${index}.authorName`)}                </p>
                 <p className="textMd testimonialAuthorDesignation">
-                  {item.authorDesignation}
+                  {t(`testimonials.list.${index}.authorDesignation`)}
                 </p>
               </div>
             </div>

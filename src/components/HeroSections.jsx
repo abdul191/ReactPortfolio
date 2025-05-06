@@ -2,25 +2,27 @@ import { TypeAnimation } from "react-type-animation";
 import Hero from "../assets/images/hero.png";
 import { FaDownload } from "react-icons/fa6";
 import resume from "../assets/Resume.pdf";
+import { useTranslation } from 'react-i18next';
+
 function HeroSections() {
+  const { t } = useTranslation();
+  const titles = [
+    t("heroSection.title1"),
+    t("heroSection.title2"),
+    t("heroSection.title3"),
+    t("heroSection.title4")
+  ];
   return (
     <section id="heroSection" className="heroSection">
       <div className="heroSectionContentBox">
         <div className="heroSectionContent">
-          <p className="sectionTitle">Hey, {"I'm"} Abdul Rehman</p>
+          <p className="sectionTitle">{t('heroSection.greeting')}</p>
           <h1 className="heroSectionTitle">
             <span className="heroSectionTitleColor">
               <TypeAnimation
                 sequence={[
-                  "Software ",
-                  1500,
-                  "Frontend ",
-                  1500,
-                  "React.js",
-                  1500,
-                  "Mernstack",
-                  1500,
-                  () => { },
+                  ...titles.flatMap((title) => [title, 1500]),
+                  () => { }
                 ]}
                 wrapper="span"
                 speed={{ type: "keyStrokeDelayInMs", value: 200 }}
@@ -28,17 +30,16 @@ function HeroSections() {
               />
             </span>
             <br />
-            Developer
+            {t('heroSection.developer')}
           </h1>
           <p className="heroSectionDescription">
-            Passionate about creating engaging digital experiences: skilled in
-            JavaScript, React.js, Redux and the MERN stack. {`Let's `}
-            collaborate and bring your digital projects to life.
-            Together, {`we'll`} build something extraordinary.
+            {t('heroSection.description')}
+
           </p>
         </div>
         <a href={resume} download className="btn btnPrimary">
-          Download CV <FaDownload />
+          {t('heroSection.downloadCV')}
+          <FaDownload />
         </a>
       </div>
       <div className="heroSectionImg">

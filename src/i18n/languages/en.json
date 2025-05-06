@@ -1,0 +1,121 @@
+{
+    "choose_language": "Choose a language and region",
+    "navbar": {
+        "home": "Home",
+        "myExpertise": "My Expertise",
+        "aboutMe": "About Me",
+        "portfolio": "Portfolio",
+        "testimonials": "Testimonials",
+        "contactMe": "Contact Me"
+    },
+    "heroSection": {
+        "greeting": "Hey, I'm Abdul Rehman",
+        "title1": "Software ",
+        "title2": "Frontend ",
+        "title3": "React.js",
+        "title4": "Mernstack",
+        "developer": "Developer",
+        "description": "Passionate about creating engaging digital experiences: skilled in JavaScript, React.js, Redux and the MERN stack. Let's collaborate and bring your digital projects to life. Together, we'll build something extraordinary.",
+        "downloadCV": "Download CV"
+    },
+    "skills": {
+        "mySkills": "My Skills",
+        "myExpertise": "My Expertise",
+        "Front-End": {
+            "title": "Front-End",
+            "description": "Skilled in HTML5, CSS3, and JavaScript, I excel at creating visually engaging interfaces, enhancing user experience."
+        },
+        "React.js": {
+            "title": "React.js",
+            "description": "Proficient in React.js, I specialize in designing dynamic interfaces, significantly enhancing user experience."
+        },
+        "Responsive Design": {
+            "title": "Responsive Design",
+            "description": "Proficient in responsive design techniques, I ensure seamless user experiences across various devices, optimizing overall user interaction."
+        },
+        "Version Control": {
+            "title": "Version Control",
+            "description": "Skilled in Git, I streamline collaboration for efficient project management in development workflows."
+        }
+    },
+    "aboutMe": {
+        "sectionTitle": "About",
+        "heading": "About Me",
+        "description1": "Front-end developer skilled in JavaScript, React.js, and responsive design. Contributed to essential React.js components for leading companies.",
+        "description2": "Committed to staying updated with technology advancements and sharing knowledge within the tech community."
+    },
+    "portfolio": {
+        "title": "Recent Projects",
+        "heading": "My Portfolio",
+        "githubButton": "Visit My GitHub",
+        "projects": [
+            {
+                "title": "Queue Management System",
+                "description": "For this hospital management system, I've crafted a front-end interface tightly integrated with powerful APIs, enhancing operational efficiency and management capabilities.",
+                "link": "View on GitHub",
+                "linkContent": "Live"
+            },
+            {
+                "title": "Facility Management System",
+                "description": "In this facility management system, I've designed a user-friendly interface to effortlessly oversee facility operations, making management tasks simple and efficient.",
+                "link": "View on GitHub",
+                "linkContent": "Live"
+            },
+            {
+                "title": "Note Keeper Application",
+                "description": "In this note-keeping app, I've created a simple platform for jotting down and organizing your thoughts quickly and efficiently, making it easy to stay organized and productive.",
+                "link": "View on GitHub",
+                "linkContent": "Live"
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Client Feedback",
+        "heading": "Customer Feedback",
+        "list": [
+            {
+                "description": "I've had a wonderful experience with the services provided. They were professional, responsive, and exceeded my expectations. Highly recommended!",
+                "authorName": "Alice Johnson",
+                "authorDesignation": "Satisfied Customer"
+            },
+            {
+                "description": "The team was fantastic to work with. They delivered exceptional results and made the entire process seamless. I couldn't be happier with the outcome!",
+                "authorName": "David Smith",
+                "authorDesignation": "Happy Customer"
+            },
+            {
+                "description": "I'm thoroughly impressed by the professionalism and expertise demonstrated. They provided top-notch service from start to finish. Would definitely work with them again!",
+                "authorName": "Emily Brown",
+                "authorDesignation": "Delighted Customer"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "heading": "Contact Me",
+        "description": "Feel free to reach out to me with any inquiries or questions. I'm happy to help.",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "chooseTopic": "Choose a topic",
+        "selectOne": "Select One ...",
+        "topics": {
+            "frontend": "Front-end Development",
+            "react": "React Development",
+            "web": "Web Development Inquiry",
+            "collab": "Project Collaboration",
+            "general": "General Inquiry"
+        },
+        "message": "Message",
+        "placeholderMessage": "Type your message...",
+        "acceptTerms": "Check to accept terms.",
+        "submit": "Submit"
+    },
+    "footer": {
+        "madeWith": "Made with 💖 by Abdul Rehman",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "cookiesSettings": "Cookies Settings"
+    }
+}

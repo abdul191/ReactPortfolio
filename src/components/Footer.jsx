@@ -1,6 +1,9 @@
 import { Link } from "react-scroll";
 import Logo from "../assets/svg/logo-apple-appstore-svgrepo-com.svg";
+import { useTranslation } from "react-i18next";
 function Footer() {
+  3
+  const { t } = useTranslation();
   return (
     <footer className="footerContainer">
       <div className="footerLinkContainer">
@@ -25,7 +28,7 @@ function Footer() {
                 duration={1000}
                 to="heroSection"
                 className="textMd ">
-                Home
+                {t('navbar.home')}
               </Link>
             </li>
             <li>
@@ -37,7 +40,7 @@ function Footer() {
                 duration={1000}
                 to="myExpertise"
                 className="textMd ">
-                My Expertise
+                {t('navbar.myExpertise')}
               </Link>
             </li>
             <li>
@@ -49,7 +52,7 @@ function Footer() {
                 duration={1000}
                 to="AboutMe"
                 className="textMd ">
-                About Me
+                {t('navbar.aboutMe')}
               </Link>
             </li>
             <li>
@@ -61,7 +64,8 @@ function Footer() {
                 duration={1000}
                 to="portfolioSection"
                 className="textMd ">
-                Portfolio
+                {t('navbar.portfolio')}
+
               </Link>
             </li>
             <li>
@@ -73,7 +77,8 @@ function Footer() {
                 duration={1000}
                 to="Testimonials"
                 className="textMd ">
-                Testimonials
+                {t('navbar.testimonials')}
+
               </Link>
             </li>
             <li>
@@ -85,7 +90,8 @@ function Footer() {
                 duration={1000}
                 to="ContactMe"
                 className="textMd ">
-                Contact
+                {t('navbar.contactMe')}
+
               </Link>
             </li>
           </ul>
@@ -175,7 +181,7 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footerContentContainer">
-        <p className="footerContent">Made with 💖 by Abdul Rehman</p>
+        <p className="footerContent">{t("footer.madeWith")}</p>
         <div className="footerSocialIcon">
           <ul>
             <li>
@@ -187,7 +193,7 @@ function Footer() {
                 duration={500}
                 to="Privacy_Policy"
                 className="textSm">
-                Privacy Policy
+                {t("footer.privacyPolicy")}
               </Link>
             </li>
             <li>
@@ -199,7 +205,7 @@ function Footer() {
                 duration={500}
                 to="Terms_of_Service"
                 className="textSm">
-                Terms of Service
+                {t("footer.termsOfService")}
               </Link>
             </li>
             <li>
@@ -211,7 +217,7 @@ function Footer() {
                 duration={500}
                 to="Cookies_Settings"
                 className="textSm">
-                Cookies Settings
+                {t("footer.cookiesSettings")}
               </Link>
             </li>
           </ul>

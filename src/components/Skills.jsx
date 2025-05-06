@@ -3,8 +3,11 @@ import frontendImg from '../assets/images/frontend.png';
 import reactImg from '../assets/images/react.jpg';
 import responsiveDesignImg from '../assets/images/responsiveDesign.jpg';
 import versionControlImg from '../assets/images/versionControl.jpg';
+import { useTranslation } from 'react-i18next';
 
 function Skills() {
+  const { t } = useTranslation();
+
   const skillImages = {
     'Front-End': frontendImg,
     'React.js': reactImg,
@@ -16,8 +19,8 @@ function Skills() {
     <>
       <section className="skillsSection" id="myExpertise">
         <div className="portfolioContainer">
-          <p className="sectionTitle">My Skills</p>
-          <h2 className="skillsSectionHeading">My Expertise</h2>
+          <p className="sectionTitle">{t('skills.mySkills')}</p>
+          <h2 className="skillsSectionHeading">{t('skills.myExpertise')}</h2>
         </div>
         <div className="skillsSectionContainer">
           {Data.skills?.map((item, index) => (
@@ -26,8 +29,9 @@ function Skills() {
                 <img src={skillImages[item.title]} alt={item.title} className="skillsImg" />
               </div>
               <div className="skillsSectionCardContent">
-                <h3 className="skillsSectionTitle">{item.title}</h3>
-                <p className="skillsSectionDescription">{item.description}</p>
+                <h3 className="skillsSectionTitle">{t(`skills.${item.title}.title`)}</h3>
+                <p className="skillsSectionDescription">{t(`skills.${item.title}.description`)}
+                </p>
               </div>
             </div>
           ))}

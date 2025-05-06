@@ -798,6 +798,139 @@ body.dark-theme .navHamburgerLine {
   }
 }
 
+/* Language Selector */
+.lang-select-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.world-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.world-icon {
+  font-size: 27px;
+  color: var(--darkBlue);
+  transition: color 0.2s ease;
+}
+
+
+.language-modal {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  width: 85%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+body.dark-theme .language-modal {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 1px rgba(255, 255, 255, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+body.dark-theme .modal-header h3 {
+  color: #fff;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+}
+
+body.dark-theme .close-button {
+  color: #fff;
+}
+
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.language-option {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #000;
+}
+
+body.dark-theme .language-option {
+  color: #fff;
+}
+
+body:not(.dark-theme) .language-option:hover,
+body:not(.dark-theme) .language-option.selected {
+  border-color: var(--primary);
+  background-color: #e0e0e0;
+}
+
+/* Dark Theme */
+body.dark-theme .language-option:hover,
+body.dark-theme .language-option.selected {
+  border-color: var(--primary);
+  background-color: #333;
+}
+
+
+.language-label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.language-region {
+  font-size: 12px;
+  color: f00;
+}
+
+body.dark-theme .language-region {
+  color: #dacbcb;
+}
+
+/* Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+
 /*media queries for hamburger */
 @media screen and (max-width: 1200px) {
   .navHamburger {
@@ -889,5 +1022,9 @@ body.dark-theme .navHamburgerLine {
   .contactSection,
   .footerContainer {
     padding: 40px;
+  }
+
+  .language-modal {
+    top: 30%;
   }
 }
