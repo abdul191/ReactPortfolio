@@ -701,7 +701,6 @@ body.dark-theme .navHamburgerLine {
     font-size: 17px;
   }
 
-  .skillsSectionContainer,
   .aboutSection,
   .porfolioSectionContainer,
   .portfolioContainerBox,
@@ -938,6 +937,10 @@ body.dark-theme .language-region {
     z-index: 200;
   }
 
+  .skillsSectionContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .navbarItems {
     display: flex;
   }
@@ -995,12 +998,24 @@ body.dark-theme .language-region {
   }
 }
 
+/* media query below 900px */
+
+@media only screen and (max-width: 900px) {
+  .skillsSectionContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* media Query for below 600px*/
 @media screen and (max-width: 600px) {
 
   .sectionTitle,
   .subTitle {
     font-size: 17px;
+  }
+
+  .skillsSectionContainer {
+    grid-template-columns: 1fr;
   }
 
   .heroSectionTitle,
